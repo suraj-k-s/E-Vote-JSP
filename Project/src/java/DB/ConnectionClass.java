@@ -14,7 +14,7 @@ public class ConnectionClass {
     public ConnectionClass() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_mainproject", "root","");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_evote", "root","");
 
         } catch (Exception ex) {
             System.out.println(ex);
@@ -48,5 +48,6 @@ public class ConnectionClass {
         return rs;
     }
 }
+
 
 
